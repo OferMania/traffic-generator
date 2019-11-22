@@ -1,7 +1,7 @@
 - duration : 10.0
   generator :  
           distribution : "seq"
-          clients_start : "1.1.1.1"
+          clients_start : "1.1.1.1" #this should be private range (10.228.143.0/24)
           clients_end   : "1.1.1.1"
           servers_start : "1.1.1.2"
           servers_end   : "1.1.1.2"

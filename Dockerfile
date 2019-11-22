@@ -6,6 +6,7 @@ RUN apt-get update \
       python3-distutils \
       python3-scapy \
       vim \
+      pciutils \
  && rm -rf /var/apt/lists/*
 
 RUN cd tmp \
