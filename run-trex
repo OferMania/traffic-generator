@@ -10,8 +10,10 @@ exec docker run \
   --privileged \
   --cap-add=ALL \
   --security-opt seccomp=unconfined \
+  --net host \
   --volume /sys/bus/pci/drivers:/sys/bus/pci/drivers:rw \
   --volume /sys/kernel/mm/hugepages:/sys/kernel/mm/hugepages:rw \
   --volume /sys/devices/system/node:/sys/devices/system/node:rw \
+  --volume /lib/modules:/lib/modules:ro \
   --workdir /tmp/trex \
   trex

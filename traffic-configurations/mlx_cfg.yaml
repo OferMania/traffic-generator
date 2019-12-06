@@ -2,6 +2,7 @@
 
 - version: 2
   interfaces: ['5e:00.0', 'af:00.0']
+  port_info:
       - ip: 1.1.1.1
         default_gw: 2.2.2.2
       - ip: 2.2.2.2
